@@ -1,4 +1,6 @@
-import Section7.lectures.polymorphism.*;
+import Section7.codingExercises.Exercise39.Car;
+import Section7.codingExercises.Exercise39.Ford;
+import Section7.codingExercises.Exercise39.Mitsubishi;
 
 public class Main {
     static int count = 0;
@@ -271,12 +273,55 @@ public class Main {
          * Polymorphism
          */
 
-        for (int i = 1; i < 11; i++){
+        /*for (int i = 1; i < 11; i++){
             Movie movie = randomMovie();
             System.out.println("Movie # " + i
                 + ": " + movie.getName() + "\n"
                 + "Plot: " + movie.plot() + "\n");
-        }
+        }*/
+
+        /**
+         * Lesson 96
+         * Polymorphism Challenge
+         */
+
+        /*Car car = new Car("Base", 4);
+        System.out.println(car.startEngine());
+        car.accelerate(20);
+        car.brake(10);
+
+        Mitsubishi lancer = new Mitsubishi("Lancer", 4);
+        System.out.println(lancer.startEngine());
+        lancer.accelerate(22);
+        lancer.brake(26);
+
+        Ford fiesta = new Ford("Fiesta", 4);
+        System.out.println(fiesta.startEngine());
+        fiesta.accelerate(33);
+        fiesta.brake(22);
+
+        Holden wtf = new Holden("Wtf", 2);
+        System.out.println(wtf.startEngine());*/
+
+        /**
+         * Exercise 39
+         * Polymorphism
+         */
+
+        Car car = new Car (8, "Base Car");
+        System.out.println(car.startEngine());
+        System.out.println(car.accelerate());
+        System.out.println(car.brake());
+
+        Mitsubishi mitsubishi = new Mitsubishi(6, "Outlander");
+        System.out.println(mitsubishi.startEngine());
+        System.out.println(mitsubishi.accelerate());
+        System.out.println(mitsubishi.brake());
+
+        Ford ford = new Ford(6, "Fiesta");
+        System.out.println(ford.startEngine());
+        System.out.println(ford.accelerate());
+        System.out.println(ford.brake());
 
     }
 
@@ -285,7 +330,7 @@ public class Main {
      * Polymorphism
      */
 
-    public static Movie randomMovie() {
+    /*public static Movie randomMovie() {
         int random = (int) (Math.random() * 5) + 1;
         System.out.println("Random number: " + random);
         switch (random) {
@@ -302,5 +347,5 @@ public class Main {
 
         }
         return null;
-    }
+    }*/
 }
