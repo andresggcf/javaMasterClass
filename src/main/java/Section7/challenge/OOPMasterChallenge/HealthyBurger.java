@@ -38,6 +38,29 @@ public class HealthyBurger extends Hamburger {
     }
   }
 
+  @Override
+  public boolean removeAddition(String addition) {
+    if(count > 0) {
+      switch (addition) {
+        case "Avocado":
+          return removeAvocado();
+        case "Jalapeno":
+          return removeJalapeno();
+        default:
+          boolean result = super.removeAddition(addition);
+          if (result){
+            System.out.println(additionsPrice);
+            additionsPrice -= super.getItemPrice();
+            System.out.println(additionsPrice);
+            count--;
+          }
+          return result;
+      }
+    } else {
+      return false;
+    }
+  }
+
   private boolean addAvocado() {
     itemPrice = 0.50;
     if(!avocado) {
