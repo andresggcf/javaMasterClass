@@ -183,4 +183,8 @@ public class Hamburger {
       return false;
     }
   }
+
+  public void itemizeHamburger() {
+
+  }
 }

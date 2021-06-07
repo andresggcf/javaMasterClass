@@ -1,6 +1,5 @@
-import Section7.codingExercises.Exercise39.Car;
-import Section7.codingExercises.Exercise39.Ford;
-import Section7.codingExercises.Exercise39.Mitsubishi;
+import Section7.codingExercises.Exercise40.DeluxeBurger;
+import Section7.codingExercises.Exercise40.HealthyBurger;
 
 public class Main {
     static int count = 0;
@@ -308,7 +307,7 @@ public class Main {
          * Polymorphism
          */
 
-        Car car = new Car (8, "Base Car");
+        /*Car car = new Car (8, "Base Car");
         System.out.println(car.startEngine());
         System.out.println(car.accelerate());
         System.out.println(car.brake());
@@ -321,7 +320,34 @@ public class Main {
         Ford ford = new Ford(6, "Fiesta");
         System.out.println(ford.startEngine());
         System.out.println(ford.accelerate());
-        System.out.println(ford.brake());
+        System.out.println(ford.brake());*/
+
+        /**
+         * Lesson 97
+         * OOP Master Challenge
+         */
+
+        /*HealthyBurger healthyBurger = new HealthyBurger("beef");
+        healthyBurger.addAddition("Cheese");
+        healthyBurger.addAddition("Cheese");
+        healthyBurger.addAddition("Avocado");
+        System.out.println(healthyBurger.getACount());
+        healthyBurger.removeAddition("Cheese");
+        System.out.println(healthyBurger.getACount());
+        */
+
+        /**
+         * Exercise 40
+         * Bill's burgers
+         */
+
+        HealthyBurger healthyBurger = new HealthyBurger("Bacon", 5.67);
+        healthyBurger.addHamburgerAddition1("Egg", 5.43);
+        healthyBurger.addHealthyAddition1("Lentils", 3.41);
+        System.out.println("Total Healthy Burger price is: " + healthyBurger.itemizeHamburger());
+
+        DeluxeBurger deluxeBurger = new DeluxeBurger();
+
 
     }
 
