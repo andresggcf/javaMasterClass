@@ -1,5 +1,4 @@
-import Section7.codingExercises.Exercise40.DeluxeBurger;
-import Section7.codingExercises.Exercise40.HealthyBurger;
+import Section8.exercises.exercise41.OrderedArrays;
 
 public class Main {
     static int count = 0;
@@ -341,13 +340,51 @@ public class Main {
          * Bill's burgers
          */
 
-        HealthyBurger healthyBurger = new HealthyBurger("Bacon", 5.67);
+        /*HealthyBurger healthyBurger = new HealthyBurger("Bacon", 5.67);
         healthyBurger.addHamburgerAddition1("Egg", 5.43);
         healthyBurger.addHealthyAddition1("Lentils", 3.41);
         System.out.println("Total Healthy Burger price is: " + healthyBurger.itemizeHamburger());
 
-        DeluxeBurger deluxeBurger = new DeluxeBurger();
+        HashMap<String, Integer> pantry = new HashMap<>();
+        pantry.put("Apples", 3);
+        pantry.put("Oranges", 2);
 
+        int currentapples = pantry.get("Apples");
+        pantry.put("Apples", currentapples + 4);
+         */
+
+        /**
+         * Lesson 99
+         * Arrays
+         */
+
+        /*Arrays array = new Arrays();
+        array.generateArray();
+         */
+
+        /**
+         * Lesson 100
+         * Arrays challenge
+         */
+
+        /*OrderedArray orderedArray = new OrderedArray();
+        int[] array = orderedArray.getIntegers(5);
+        orderedArray.printArray(array);
+        int[] ordered = orderedArray.sortArray(array);
+        System.out.println("\nOrdered array to: \n");
+        orderedArray.printArray(ordered);*/
+
+        /**
+         * Exercise 41
+         * Arrays
+         */
+
+        OrderedArrays orderedArray = new OrderedArrays();
+        int[] array = orderedArray.getIntegers(5);
+        orderedArray.printArray(array);
+        int[] ordered = orderedArray.sortArray(array);
+        System.out.println("\nOrdered array to: \n");
+        orderedArray.printArray(ordered);
 
     }
 
