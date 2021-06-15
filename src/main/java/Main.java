@@ -1,4 +1,4 @@
-import Section8.exercises.exercise41.OrderedArrays;
+import java.util.Arrays;
 
 public class Main {
     static int count = 0;
@@ -379,12 +379,40 @@ public class Main {
          * Arrays
          */
 
-        OrderedArrays orderedArray = new OrderedArrays();
+        /*OrderedArrays orderedArray = new OrderedArrays();
         int[] array = orderedArray.getIntegers(5);
         orderedArray.printArray(array);
         int[] ordered = orderedArray.sortArray(array);
         System.out.println("\nOrdered array to: \n");
-        orderedArray.printArray(ordered);
+        orderedArray.printArray(ordered);*/
+
+        /**
+         * Lesson 102
+         * Reference Types vs Value Types
+         */
+
+        int myIntValue = 10;
+        int anotherIntValue = myIntValue;
+
+        System.out.println("myIntValue = " + myIntValue);
+        System.out.println("anotherIntValue = " + anotherIntValue);
+
+        anotherIntValue++;
+
+        System.out.println("after myIntValue = " + myIntValue);
+        System.out.println("after anotherIntValue = " + anotherIntValue);
+
+        //both arrays hold the same address on memory
+        int[] myIntArray = new int[5];
+        int[] anotherArray = myIntArray;
+
+        System.out.println("myIntArray = " + Arrays.toString(myIntArray));
+        System.out.println("anotherArray = " + Arrays.toString(anotherArray));
+
+        anotherArray[1] = 1;
+
+        System.out.println("after myIntArray = " + Arrays.toString(myIntArray));
+        System.out.println("after anotherArray = " + Arrays.toString(anotherArray));
 
     }
 
