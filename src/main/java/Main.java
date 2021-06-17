@@ -1,3 +1,5 @@
+import Section8.exercises.exercise43.ReverseArrayExercise;
+
 import java.util.Arrays;
 
 public class Main {
@@ -391,7 +393,7 @@ public class Main {
          * Reference Types vs Value Types
          */
 
-        int myIntValue = 10;
+        /*int myIntValue = 10;
         int anotherIntValue = myIntValue;
 
         System.out.println("myIntValue = " + myIntValue);
@@ -413,13 +415,57 @@ public class Main {
 
         System.out.println("after myIntArray = " + Arrays.toString(myIntArray));
         System.out.println("after anotherArray = " + Arrays.toString(anotherArray));
+         */
+
+      /**
+       * Lesson 103
+       * Minimum element challenge
+       */
+
+        /*MinimumElement element = new MinimumElement();
+        int[] array = element.mainStart();
+        int min = element.findMin(array);
+        System.out.println("minimum number in array " + Arrays.toString(array) + ": " + min);
+         */
+
+        /**
+         * Exercise 42
+         * Minimum Element
+         */
+
+        /*MinimumElementExercise exercise = new MinimumElementExercise();
+        int[] array = exercise.readElements(exercise.readInteger());
+        System.out.println("The minimum number is: " + exercise.findMin(array));
+         */
+
+        /**
+         * Lesson 104
+         * Reverse array challenge
+         */
+        /*ReverseArray reverseArray = new ReverseArray();
+        int[] array = {1, 3, 5, 12, 0 ,23};
+        System.out.println("Array = " + Arrays.toString(array));
+        int[] reversed = reverseArray.reverse(array);
+        System.out.println("Reversed array = " + Arrays.toString(reversed));*/
+
+        /**
+         * Exercise 43
+         * Reverse array exercise
+         */
+
+        int[] array2 = {5, 4, 3, 2, 1};
+        System.out.println("Array Exercise = " + Arrays.toString(array2));
+        ReverseArrayExercise arrayExercise = new ReverseArrayExercise();
+        arrayExercise.reverse(array2);
+        System.out.println("Array Exercise = " + Arrays.toString(array2));
+
 
     }
 
     /**
-     * Lesson 95
-     * Polymorphism
-     */
+       * Lesson 95
+       * Polymorphism
+       */
 
     /*public static Movie randomMovie() {
         int random = (int) (Math.random() * 5) + 1;

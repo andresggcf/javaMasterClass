@@ -2,7 +2,7 @@ package Section8.lectures.arrays;
 
 import java.util.Scanner;
 
-public class Arrays {
+public class ArraysLectures {
   private static Scanner scanner = new Scanner(System.in);
 
   public void generateArray(){
