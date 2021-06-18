@@ -1,6 +1,5 @@
-import Section8.exercises.exercise43.ReverseArrayExercise;
-
-import java.util.Arrays;
+import Section8.lectures.arrayList.GLMain;
+import Section8.lectures.arrayList.GroceryList;
 
 public class Main {
     static int count = 0;
@@ -453,12 +452,19 @@ public class Main {
          * Reverse array exercise
          */
 
-        int[] array2 = {5, 4, 3, 2, 1};
+        /*int[] array2 = {5, 4, 3, 2, 1};
         System.out.println("Array Exercise = " + Arrays.toString(array2));
         ReverseArrayExercise arrayExercise = new ReverseArrayExercise();
         arrayExercise.reverse(array2);
-        System.out.println("Array Exercise = " + Arrays.toString(array2));
+        System.out.println("Array Exercise = " + Arrays.toString(array2));*/
 
+        /**
+         * Lesson 106
+         * ArrayList
+         */
+
+        GLMain executeGrocery = new GLMain(new GroceryList());
+        executeGrocery.execute();
 
     }
 
@@ -485,4 +491,5 @@ public class Main {
         }
         return null;
     }*/
+
 }

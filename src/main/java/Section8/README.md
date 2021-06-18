@@ -48,7 +48,36 @@ Value types on the other hand do not point to a memory address, but to a value, 
 a variable of type int contains a 32bit version of a number. So primitive types
 (byte, short, int, long, float, double, char and boolean) are value types.
  
+##Resizing Arrays
 
+To resize an array we can do the following:
+```java
+class ExampleArray2{
+  int[] baseArray = new int[10];
+  private static void resizeArray(){
+
+    //make a copy of the original array;
+    int[] original = baseArray;
+
+    //initialize with a new size
+    baseArray = new int[12];
+
+    //create a loop to add the original values to the new array
+    for (int i=0; i < original.length; i++){
+      baseArray[i] = original[i];
+    }
+  }
+}
+```
+But to prevent this kind of programming method, we rather use lists.
+
+## Lists and Array Lists
+List is an interface and an ordered collection (extends the Collections interface), that allows us to have items 
+and their respective positions.
+
+ArrayList is a resizable array (it does it automatically) as you can see in the [GroceryList Class](./lectures/arrayList/GroceryList.java).
+where the list starts empty, with no declaration of the size or length, but we gradually add
+items to the list
 
 
 
